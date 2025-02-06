@@ -32,7 +32,7 @@ Your existing Go projects and workspace structure stay the same
 The only thing that changes is which version of Go you're using - everything else about your setup remains functional just as it is now.
 
 2. Inside the directory, `go mod init go-geo-poc` to initialize the project before getting tooling
-3. Obtain gorilla mux for routing, uber h3 for geospatial indexing, & spherand for generating random points on a sphere.
+3. Obtain [gorilla mux](https://github.com/gorilla/mux) for routing, [uber h3](https://github.com/uber/h3-go?tab=readme-ov-file) for geospatial indexing, [IP-API](https://ip-api.com/) , & [spherand](https://github.com/mmcloughlin/spherand) for generating random points on a sphere.
 
 ```
 go get -u github.com/gorilla/mux
@@ -41,3 +41,11 @@ go get -u github.com/mmcloughlin/spherand
 ```
 
 3. After completing this POC, demo by `go run main.go` and navigate to `http://localhost:8080` to see location and a list of recommended POIs.
+
+   Expected outputs:
+   
+<img width="676" alt="Screenshot 2025-02-06 at 11 39 13 AM" src="https://github.com/user-attachments/assets/de54dda3-3fc9-4cea-8d24-b91312a5feff" />
+<img width="783" alt="Screenshot 2025-02-06 at 11 54 45 AM" src="https://github.com/user-attachments/assets/23675860-5308-45ef-891b-3c843dd9425d" />
+<img width="534" alt="Screenshot 2025-02-06 at 12 24 45 PM" src="https://github.com/user-attachments/assets/6511b5c4-d714-4278-af88-8577d6ea2f20" />
+<img width="832" alt="Screenshot 2025-02-06 at 12 25 14 PM" src="https://github.com/user-attachments/assets/1b5f8fd4-381c-4fc7-a3d3-a13005749680" />
+
