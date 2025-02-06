@@ -31,7 +31,8 @@ Your existing Go projects and workspace structure stay the same
 
 The only thing that changes is which version of Go you're using - everything else about your setup remains functional just as it is now.
 
-2. Obtain gorilla mux for routing, uber h3 for geospatial indexing, & spherand for generating random points on a sphere.
+2. Inside the directory, `go mod init go-geo-poc` to initialize the project before getting tooling
+3. Obtain gorilla mux for routing, uber h3 for geospatial indexing, & spherand for generating random points on a sphere.
 
 ```
 go get -u github.com/gorilla/mux
